@@ -14,6 +14,7 @@ class Window(Tk):
         self.mainframe = ttk.Frame(self)
         self.mainframe.rowconfigure(0, weight=1)
         self.mainframe.columnconfigure(0, weight=1)
+        # 自动调节尺寸位置
         self.mainframe.pack(expand=True)
 
         self.canvas = TheCanvas(self.mainframe)
