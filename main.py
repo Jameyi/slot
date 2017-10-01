@@ -66,6 +66,7 @@ class Wheel(object):
         return self.wheel_item[index]
 
     def wheel_time(self):
+        #延迟10毫秒后，调用wheel_count函数
         self.canvas.after(10, self.wheel_count)
 
     def wheel_count(self):
