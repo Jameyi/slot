@@ -71,7 +71,7 @@ class Wheel(object):
         self.canvas.after(10, self.wheel_count)
 
     def wheel_count(self):
-
+        # Moves item to bottom of stack. Same as tag_lower.
         self.canvas.lower(self.wheel_item[self.count])
         if self.count == 7:
             self.count = 0
